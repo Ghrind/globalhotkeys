@@ -1,0 +1,35 @@
+## rghk 0.3.2
+Fix a crash : rescue Xlib error in KeyBinder#bind
+Define XlibError exception.
+Add X11 header in extconf.rb
+
+## rghk 0.3.1
+Fix a bug in KeyVal constants name.
+
+## rghk 0.3.0
+Define exception classes.
+Define GlobalHokeys::KeyVal constants.
+Allow GlobalHotKeys::KeyBinder#new to create a binded object.
+Fix a segmentation fault in initialization.
+Add Rakefile.
+Fix typo in documentation.
+
+## rghk 0.2.0
+Change the require call to:
+ require 'globalhotkeys'
+Add a function to get a key value from a string.
+Use NUM2INT instead of FIX2INT in bind function to check if arguments support to_i.
+
+Fix an error on license header of each project files.
+
+## rghk 0.1.1
+Add KeyBinder.unbind_all function in example.
+Fix a bug that can prevent binding.
+
+## rghk 0.1.0
+Add documentation.
+Add README file.
+Hide creation of KeyBinder objects (new method).
+
+## rghk 0.0.90
+First public release.
