@@ -30,7 +30,7 @@ end
 
 find_header('ruby.h') or exit 1
 gtk_cflags=`pkg-config --cflags gtk+-2.0`.chomp!
-$CFLAGS+=gtk_cflags
+$INCFLAGS+=gtk_cflags
 find_library('X11', 'XKeysymToKeycode') or exit 1
 find_library('gobject-2.0', 'g_type_init') or exit 1
 find_library('gdk-x11-2.0', '') or exit 1
